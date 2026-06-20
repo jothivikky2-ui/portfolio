@@ -1,89 +1,218 @@
 import "./index.css";
 import profile from "./assets/profile.jpg";
+
 function App() {
   return (
-    <div className="hero">
-      <img src={profile} alt="Jothi Basu" className="profile-pic" />
-      <h1>Jothi Basu</h1>
-      <h2>Python Full Stack Developer</h2>
+    <div className="container">
 
-      <p>
-        B.Tech Information Technology student passionate about
-        React.js, Vue.js, Python, MySQL and MongoDB.
-      </p>
+      <nav className="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <button className="btn">View Projects</button>
-      <a href="/resume.pdf" target="_blank">
-  <button className="btn">Download Resume</button>
-</a>
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-text">
+          <h1>Jothi Basu</h1>
+          <h2>Python Full Stack Developer</h2>
 
-      <section style={{ marginTop: "60px" }}>
-        <h2>About Me</h2>
+          <p>
+            B.Tech Information Technology student passionate about
+            Full Stack Development, Artificial Intelligence and
+            modern web technologies.
+          </p>
+
+          <p>
+            Skilled in React.js, Vue.js, Python, Django,
+            MySQL and MongoDB.
+          </p>
+
+          <div className="btn-group">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <button className="btn">Download Resume</button>
+            </a>
+
+            <a
+              href="https://github.com/jothivikky2-ui"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn">GitHub</button>
+            </a>
+
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn">LinkedIn</button>
+            </a>
+          </div>
+        </div>
+
+        <div className="hero-image">
+          <img src={profile} alt="Jothi Basu" className="profile-pic" />
+        </div>
+      </section>
+
+      {/* Career Objective */}
+      <section className="objective">
+        <h2>Career Objective</h2>
+
         <p>
-          I am a B.Tech IT student from Sri Krishna Engineering College.
-          I have completed Python Full Stack Development training and
-          enjoy building modern web applications.
+          Aspiring Full Stack Developer seeking an entry-level opportunity
+          to apply my skills in React.js, Python and modern web technologies
+          while contributing to innovative software solutions.
         </p>
       </section>
 
-      <section style={{ marginTop: "60px" }}>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Vue.js</li>
-          <li>Python</li>
-          <li>MySQL</li>
-          <li>MongoDB</li>
-          <li>Aiml</li>
-        </ul>
+      {/* About */}
+      <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+          I am Jothi Basu, a B.Tech Information Technology student from
+          Sri Krishna Engineering College. I have completed Python Full
+          Stack Development training and built projects using React.js,
+          Vue.js, Python, Django and Machine Learning technologies.
+          My goal is to start my career as a Software Developer and
+          contribute to innovative products while continuously learning
+          new technologies.
+        </p>
       </section>
 
-      <section style={{ marginTop: "60px" }}>
+      {/* Education */}
+      <section className="education">
+        <h2>Education</h2>
+
+        <div className="card">
+          <h3>B.Tech Information Technology</h3>
+          <p>Sri Krishna Engineering College</p>
+          <p>2022 - 2026</p>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div className="skills-grid">
+          <div className="skill-card">HTML</div>
+          <div className="skill-card">CSS</div>
+          <div className="skill-card">JavaScript</div>
+          <div className="skill-card">React.js</div>
+          <div className="skill-card">Vue.js</div>
+          <div className="skill-card">Python</div>
+          <div className="skill-card">Django</div>
+          <div className="skill-card">MySQL</div>
+          <div className="skill-card">MongoDB</div>
+          <div className="skill-card">Git & GitHub</div>
+        </div>
+      </section>
+
+      {/* Training */}
+      <section className="training">
+        <h2>Training Experience</h2>
+
+        <div className="card">
+          <h3>Python Full Stack Development</h3>
+          <p>Besant Technologies, Chennai</p>
+
+          <p>
+            Learned Frontend Development, React.js, Python,
+            Django, SQL and GitHub version control.
+          </p>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects">
         <h2>Projects</h2>
 
-        <h3>AI-Based Placement Prediction System</h3>
-        <p>
-          Developed a machine learning-based system using Python,
-          Django, NLP and Random Forest to predict student placement outcomes.
-        </p>
+        <div className="project-card">
+          <h3>AI-Based Placement Prediction System</h3>
 
-        <h3>Attendance Management System</h3>
-        <p>
-          Built using Vue.js with attendance tracking, reports and dashboard.
-        </p>
+          <p>
+            Developed an intelligent placement prediction platform using
+            Machine Learning algorithms such as Random Forest and NLP
+            techniques. The system analyzes academic performance,
+            technical skills, certifications and aptitude scores to
+            predict placement opportunities.
+          </p>
+
+          <p>
+            <strong>Technologies:</strong> Python, Django,
+            Machine Learning, NLP, Random Forest, MySQL
+          </p>
+        </div>
+
+        <div className="project-card">
+          <h3>Attendance Management System</h3>
+
+          <p>
+            Built using Vue.js with attendance tracking,
+            dashboard, reporting and student management features.
+          </p>
+
+          <p>
+            <strong>Technologies:</strong> Vue.js, JavaScript, CSS
+          </p>
+        </div>
       </section>
 
-<section style={{ marginTop: "60px" }}>
-  <h2>Contact</h2>
+      {/* Certifications */}
+      <section className="certifications">
+        <h2>Certifications</h2>
 
-  <p>Email: jothivikky2@gmail.com</p>
-  <p>Phone: 9159608154</p>
+        <div className="card">
+          <h3>Python Full Stack Development</h3>
+          <p>Besant Technologies, Chennai</p>
+        </div>
 
-  <p>
-    GitHub:
-    <a
-      href="https://github.com/jothivikky2-ui"
-      target="_blank"
-      rel="noreferrer"
-    >
-      github.com/jothivikky2-ui
-    </a>
-  </p>
+        <div className="card">
+          <h3>React.js Development Training</h3>
+          <p>Besant Technologies, Chennai</p>
+        </div>
 
-  <p>
-    LinkedIn:
-    <a
-      href="YOUR_LINKEDIN_URL"
-      target="_blank"
-      rel="noreferrer"
-    >
-      View LinkedIn Profile
-    </a>
-  </p>
-</section>
+        <div className="card">
+          <h3>SQL & Database Management</h3>
+          <p>Besant Technologies, Chennai</p>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <div className="card">
+          <h3>📧 Email</h3>
+          <p>jothivikky2@gmail.com</p>
+
+          <h3>📱 Phone</h3>
+          <p>9159608154</p>
+
+          <div className="btn-group">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn">LinkedIn</button>
+            </a>
+
+            <a
+              href="https://github.com/jothivikky2-ui"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn">GitHub</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
