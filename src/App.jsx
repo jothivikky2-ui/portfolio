@@ -1,8 +1,9 @@
 import "./index.css";
-
+import profile from "./assets/profile.jpg";
 function App() {
   return (
     <div className="hero">
+      <img src={profile} alt="Jothi Basu" className="profile-pic" />
       <h1>Jothi Basu</h1>
       <h2>Python Full Stack Developer</h2>
 
@@ -55,11 +56,34 @@ function App() {
         </p>
       </section>
 
-      <section style={{ marginTop: "60px" }}>
-        <h2>Contact</h2>
-        <p>Email: jothivikky2@gmail.com</p>
-        <p>Phone: 9159608154</p>
-      </section>
+<section style={{ marginTop: "60px" }}>
+  <h2>Contact</h2>
+
+  <p>Email: jothivikky2@gmail.com</p>
+  <p>Phone: 9159608154</p>
+
+  <p>
+    GitHub:
+    <a
+      href="https://github.com/jothivikky2-ui"
+      target="_blank"
+      rel="noreferrer"
+    >
+      github.com/jothivikky2-ui
+    </a>
+  </p>
+
+  <p>
+    LinkedIn:
+    <a
+      href="YOUR_LINKEDIN_URL"
+      target="_blank"
+      rel="noreferrer"
+    >
+      View LinkedIn Profile
+    </a>
+  </p>
+</section>
     </div>
   );
 }
