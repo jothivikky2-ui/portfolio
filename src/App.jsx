@@ -12,6 +12,9 @@ function App() {
       </p>
 
       <button className="btn">View Projects</button>
+      <a href="/resume.pdf" target="_blank">
+  <button className="btn">Download Resume</button>
+</a>
 
       <section style={{ marginTop: "60px" }}>
         <h2>About Me</h2>
